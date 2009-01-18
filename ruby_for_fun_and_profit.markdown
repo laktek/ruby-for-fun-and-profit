@@ -10,7 +10,7 @@ Whether you are a seasoned hacker who wants a productive companion or a novice l
 
 ## Made in Japan
 
- Most of us loves the stuff from Japan. We hunt for the tag **Made in Japan** when we are going for auto mobiles or electronic gadgets.  If you have the same nostalgia, you may be excited to know that Ruby also comes with the same tag.  Inspiring Japanese programmer named [Yukihiro "Matz" Matsumoto](http://en.wikipedia.org/wiki/Yukihiro_Matsumoto) was the brainchild behind Ruby. He felt the need of a flexible scripting language which built with the power of Object Oriented programming. He went on to blend parts of his favourite languages (Perl, Smalltalk, Eiffel, Ada, and Lisp) to come up with an unique new language.   
+Most of us loves the stuff from Japan. The tag **Made in Japan** holds a great value, when we are hunting for auto mobiles or electronic gadgets.  If you have the same craving, you may be excited to know that Ruby also comes with the same tag.  Inspiring Japanese programmer named [Yukihiro "Matz" Matsumoto](http://en.wikipedia.org/wiki/Yukihiro_Matsumoto) was the brainchild behind Ruby. He felt the need of a flexible scripting language which built with the power of Object Oriented programming. He went on to blend parts of his favourite languages (Perl, Smalltalk, Eiffel, Ada, and Lisp) to come up with an unique new language.   
 
 He started his work on February 24, 1993. Matz wrote Ruby with the philosophy of "Principle of least surprise". After 2 years Ruby was released to public as an Open Source project and slowly it started to gain traction from the global community.
 
@@ -130,7 +130,7 @@ Inside the initialize method we have assigned values to two variables. In Ruby v
 
 ## Free Resources
 
-Here are some free awesome Ruby books if you are nostalgic for more.
+Here are some free and awesome Ruby books if you are craving for more.
 
 * Why's (Poignant) Guide to Ruby (**My Personal Favourite**) - <http://poignantguide.net/ruby/index.html>
 * Mr. Neighborly's Humble Little Ruby Book - <http://humblelittlerubybook.com/>
