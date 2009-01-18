@@ -110,13 +110,11 @@ In Ruby, it is customary to define the class name in camel case. We start the ea
 
 Now we are going to add a method to the class. In Ruby method is defined with `def` keyword. You can pass accept arguments to the method, these arguments goes along with the method name enclosed with parenthesis.  
 
-<code>
-  def initialize(name)
-    @list_name = name  
-    @tasks = Array.new
-  end
-</code>
-  
+    def initialize(name)
+      @list_name = name  
+      @tasks = Array.new
+    end
+
 The method we defined above, `initialize` holds a special meaning. As the name implies `initialize` method will be executed when you create a new instance(object) of the given class. For example following code will create a new TodoList object.
   
 <code>
@@ -133,9 +131,10 @@ Inside the initialize method we have assigned values to two variables. In Ruby v
 ## Free Resources
 
 Here are some free awesome Ruby books if you are nostalgic for more.
-  * Why's (Poignant) Guide to Ruby (**My Personal Favourite**) - <http://poignantguide.net/ruby/index.html>
-  * Mr. Neighborly's Humble Little Ruby Book - <http://humblelittlerubybook.com/>
-  * Programming Ruby (aka. The Pickaxe) - <http://www.whytheluckystiff.net/ruby/pickaxe/>
+
+* Why's (Poignant) Guide to Ruby (**My Personal Favourite**) - <http://poignantguide.net/ruby/index.html>
+* Mr. Neighborly's Humble Little Ruby Book - <http://humblelittlerubybook.com/>
+* Programming Ruby (aka. The Pickaxe) - <http://www.whytheluckystiff.net/ruby/pickaxe/>
   
 
 **PLEASE NOTE : This is still a working draft. Contents are subject to change.
