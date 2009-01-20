@@ -81,7 +81,7 @@ What exactly we did here? we called the method `times` on integer 3 and along wi
 
 ## Lets do some REAL stuff
 
-I feel there is no point of learning a programming language if we cannot use it to scratch our itch. So without without wasting any superficial examples, we are going to build something that we could use everyday. A simple To Do List manager. Open up your favourite text editor (remember you don't need a bulky <abbr titile="Integrated Development Environment">IDE</abbr> to write Ruby) and pull up your socks, we are going to start hacking!
+I feel there is no point of learning a programming language if we cannot use it to scratch our itch. So without without wasting any superficial examples, we are going to build something that we could use everyday. A simple To Do List manager. Open up your favourite text editor (remember you don't need a bulky <abbr title="Integrated Development Environment">IDE</abbr> to write Ruby) and pull up your socks, we are going to start hacking!
 
 We will be building our ToDo manager in the agile way. Starting from the very basic features and enhancing them in each iteration.
 
@@ -89,7 +89,7 @@ The most preliminary version will have the following functionality.
 1. Add a task.
 2. Listing the available tasks
 
-### Buidling Blocks
+### Building Blocks
 
 First, we will need to identify the classes we should build. In Object Oriented principles classes acts as the blueprint or cookie cutter for the real objects. The way object should behave is defined in the class. 
  
@@ -118,7 +118,7 @@ The method we defined above, `initialize` holds a special meaning. As the name i
   my_tasks = TodoList.new("My Tasks")
 </code>
 
-Each `TodoList` instance will have a name and an array to hold the tasks. Everytime we create a new `TodoList` object, we will assign it a name and reserve an empty array for tasks. We call such variables as instance variable as they are specific to a particular instance. In Ruby, instance variable names are notated with a `@` symbol. Since instance variables are scoped within object life cycle, they will not be accessible to outside methods. 
+Each `TodoList` instance will have a name and an array to hold the tasks. Every time we create a new `TodoList` object, we will assign it a name and reserve an empty array for tasks. We call such variables as instance variable as they are specific to a particular instance. In Ruby, instance variable names are notated with a `@` symbol. Since instance variables are scoped within object life cycle, they will not be accessible to outside methods. 
 
 So how do we make these instance variables accessible to outside methods? Common design pattern is to use two methods to read and write the instance variable. These methods are known as **attribute accessors**. However it would be pretty annoying to write such methods for each and every instance variable we want to expose. Ruby makes our life easy by introducing handy shortcuts to implement attribute accessors. There are 3 such shortcuts, `attr_reader`, `attr_writer` and `attr_accessor`. `attr_reader` will generate the read method for the instance variable, similarly `attr_writer` will generate the write method and `attr_accessor` will generate both read and write methods. Lets add attribute accessors in our `TodoList` class.
 
@@ -164,15 +164,15 @@ Since we can add tasks to our task list, next there should be a way to display t
         end
       end
 
-In this method we have used several ruby idioms. Remember we said a method in Ruby will always return a value? But if you did notice we didn't explicitly specified a return value for any of our previous methods. Thats because Ruby automatically return the value of the last line executed as the return value. However if you look carefully in the above method we have defined a return value. That is a conditional statement which will be executed if only the tasks are blank. So if the method come across an empty tasks array it will gracefully return from the method. 
+In this method we have used several ruby idioms. Remember we said a method in Ruby will always return a value? But if you did notice we didn't explicitly specified a return value for any of our previous methods. That's because Ruby automatically return the value of the last line executed as the return value. However if you look carefully in the above method we have defined a return value. That is a conditional statement which will be executed if only the tasks are blank. So if the method come across an empty tasks array it will gracefully return from the method. 
 
-Another spiffy option in Ruby syntax is the flexibility in placing the conditions(`if` clause). In most of the programming languages we define the condtional clause first and then the predicate. But in Ruby if you prefer you could define the conditional clause after the predicate. This could make the code really readable in some cases, as plain english. Read the line 3 of above `list` method. Can you understand what it means? It can be read as "Say(return) 'This Task List is empty' if task list is empty".
+Another spiffy option in Ruby syntax is the flexibility in placing the conditions(`if` clause). In most of the programming languages we define the conditional clause first and then the predicate. But in Ruby if you prefer you could define the conditional clause after the predicate. This could make the code really readable in some cases, as plain English. Read the line 3 of above `list` method. Can you understand what it means? It can be read as "Say(return) 'This Task List is empty' if task list is empty".
 
-Rather than using a tradional `for` loop for iteratiing through the tasks array, we have used a method called `each` which can be applied to any enumerable object (such as arrays, hashes). `each` method will execute a given code block for each iteration. It also passes the current item in array to the code block. We have defined the code block to be executed inside keyword `do..end`(alternatively, a code block can be defined insdie curly braces - {})
+Rather than using a traditional `for` loop for iterating through the tasks array, we have used a method called `each` which can be applied to any enumerable object (such as arrays, hashes). `each` method will execute a given code block for each iteration. It also passes the current item in array to the code block. We have defined the code block to be executed inside keyword `do..end`(alternatively, a code block can be defined inside curly braces - {})
 
 ### DIY challenge
 
-I think we covered mouthful of Ruby for the day. So it's time to call it a day and go for a walk :) However we are not yet done with our app endeavor. We will be revisiting it in the next issue, with bunch of other cool stuff. So stay tuned!
+I think we covered mouthful of Ruby for the day. So it's time to call it a day and go for a walk :) However we are not yet done with our app endeavour. We will be revisiting it in the next issue, with bunch of other cool stuff. So stay tuned!
 
 Oh! wait why should you wait till the next tutorial? You could try to build the rest of the features yourself. I know you are a big hacker at heart! Here are some enhancements you could try by your own.
 * Ability to set the status of a task
@@ -191,9 +191,14 @@ Here are some free and awesome Ruby books if you are craving for more.
 * Mr. Neighborly's Humble Little Ruby Book - <http://humblelittlerubybook.com/>
 * Programming Ruby (aka. The Pickaxe) - <http://www.whytheluckystiff.net/ruby/pickaxe/>
   
+## Source Code
 
-**PLEASE NOTE : This is still a rough working draft. Contents are subject to change.
+You can find the source code for the examples used in this article at <http://github.com/laktek/ruby-for-fun-and-profit>
 
- 
+**PLEASE NOTE : This is still a working draft. Contents are subject to change.
+
+###Creative Commons License
+
+Ruby for Fun and Profit by Lakshan Perera is licensed under a [Creative Commons Attribution-Share Alike 3.0 United States License](http://creativecommons.org/licenses/by-sa/3.0/us/). 
 
 
