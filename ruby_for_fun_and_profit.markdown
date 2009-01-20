@@ -22,7 +22,7 @@ Ruby is built on several key concepts which make it shine among the rest of prog
 
 ### Everything is an Object
 
-In Ruby everything is treated as an object. That means you can have properties and methods for each and every piece of information in Ruby (even Nil is an Object). Compare this with language like Java or C++, where they have primitive data types and every statement will not return an object. 
+In Ruby everything is treated as an object. That means you can have properties, methods and return values for each and every data type in Ruby (even Nil is an Object). Compare this with language like Java or C++, where they have primitive data types and every statement will not return an object. 
 
 ### Duck Typing
 
@@ -88,10 +88,6 @@ We will be building our ToDo manager in the agile way. Starting from the very ba
 The most preliminary version will have the following functionality.
 1. Add a task.
 2. Listing the available tasks
---
-3. Marking Tasks as completed.
-4. Edit a task.
-5. Remove tasks
 
 ### Buidling Blocks
 
@@ -150,14 +146,42 @@ After defining the `TodoList` class, lets move to the `Task` class. In the initi
     
 ### Adding Meat
 
-Now we have the barebone classes ready, next move on to add some meat. Lets see how to add a new task to the task list. All we have to do here is create a new task object and push it to the tasks array. We also pass the name of the task to be added, as a parameter.
+We have the barebone classes ready, now lets move on to add some meat. Lets see how are we going to add a new task to the task list. All we have to do here is create a new task object and then push it to the tasks array. We also have to pass the name of the task to be added, as a parameter.
 
   def add(name)
     task = Task.new(name)
     @tasks.push(task)
   end
 
-There are several notations to add an item to an array, 
+Since we can add tasks to our task list, next there should be a way to display the added tasks. This is also very simple thing to do. All we have to do here is iterate through our tasks array and print each one of them on the screen. Further we are adding a condition to display a nice message when there are no tasks on the list.
+
+     def list
+        puts "Your Tasks:"
+        return "This Task List is empty" if @tasks.empty?
+        
+        @tasks.each do |task|
+          puts "- #{task.name} [#{task.status}]"
+        end
+      end
+
+In this method we have used several ruby idioms. Remember we said a method in Ruby will always return a value? But if you did notice we didn't explicitly specified a return value for any of our previous methods. Thats because Ruby automatically return the value of the last line executed as the return value. However if you look carefully in the above method we have defined a return value. That is a conditional statement which will be executed if only the tasks are blank. So if the method come across an empty tasks array it will gracefully return from the method. 
+
+Another spiffy option in Ruby syntax is the flexibility in placing the conditions(`if` clause). In most of the programming languages we define the condtional clause first and then the predicate. But in Ruby if you prefer you could define the conditional clause after the predicate. This could make the code really readable in some cases, as plain english. Read the line 3 of above `list` method. Can you understand what it means? It can be read as "Say(return) 'This Task List is empty' if task list is empty".
+
+Rather than using a tradional `for` loop for iteratiing through the tasks array, we have used a method called `each` which can be applied to any enumerable object (such as arrays, hashes). `each` method will execute a given code block for each iteration. It also passes the current item in array to the code block. We have defined the code block to be executed inside keyword `do..end`(alternatively, a code block can be defined insdie curly braces - {})
+
+### DIY challenge
+
+I think we covered mouthful of Ruby for the day. So it's time to call it a day and go for a walk :) However we are not yet done with our app endeavor. We will be revisiting it in the next issue, with bunch of other cool stuff. So stay tuned!
+
+Oh! wait why should you wait till the next tutorial? You could try to build the rest of the features yourself. I know you are a big hacker at heart! Here are some enhancements you could try by your own.
+* Ability to set the status of a task
+* Option of setting the deadline of a task
+* Removing an added task
+* Editing a task.
+
+Below I have specified some handy ebooks you could refer, also there are lots of other Ruby resources online. Google is your friend ;) If you have any questions, suggestions, or critics please feel free to contact me via lakshan [at] web2media [dot] net 
+
 
 ## Free Resources
 
