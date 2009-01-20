@@ -87,12 +87,13 @@ We will be building our ToDo manager in the agile way. Starting from the very ba
 
 The most preliminary version will have the following functionality.
 1. Add a task.
-2. Edit a task.
-3. Remove tasks
-4. Listing the available tasks
-5. Marking Tasks as completed.
+2. Listing the available tasks
+--
+3. Marking Tasks as completed.
+4. Edit a task.
+5. Remove tasks
 
-### Classes and Objects
+### Buidling Blocks
 
 First, we will need to identify the classes we should build. In Object Oriented principles classes acts as the blueprint or cookie cutter for the real objects. The way object should behave is defined in the class. 
  
@@ -121,13 +122,42 @@ The method we defined above, `initialize` holds a special meaning. As the name i
   my_tasks = TodoList.new("My Tasks")
 </code>
 
-Inside the initialize method we have assigned values to two variables. In Ruby, variables started with a `@` symbol is known as instance variables. Instance variables will reside and only available within the scope of a object instance. So every method in that instance will have access to those variables but they will not be accessible by outside methods. 
+Each `TodoList` instance will have a name and an array to hold the tasks. Everytime we create a new `TodoList` object, we will assign it a name and reserve an empty array for tasks. We call such variables as instance variable as they are specific to a particular instance. In Ruby, instance variable names are notated with a `@` symbol. Since instance variables are scoped within object life cycle, they will not be accessible to outside methods. 
 
-### Getters and Setters
+So how do we make these instance variables accessible to outside methods? Common design pattern is to use two methods to read and write the instance variable. These methods are known as **attribute accessors**. However it would be pretty annoying to write such methods for each and every instance variable we want to expose. Ruby makes our life easy by introducing handy shortcuts to implement attribute accessors. There are 3 such shortcuts, `attr_reader`, `attr_writer` and `attr_accessor`. `attr_reader` will generate the read method for the instance variable, similarly `attr_writer` will generate the write method and `attr_accessor` will generate both read and write methods. Lets add attribute accessors in our `TodoList` class.
 
-How do we make our instance variables to be accessed by methods outside of the
+    class TodoList
+      
+      attr_accessor :list_name
+      attr_reader :tasks
+      
+      def initialize(name)
+        @list_name = name  
+        @tasks = Array.new
+      end
+         
+    end
 
+After defining the `TodoList` class, lets move to the `Task` class. In the initial stage we shall have only a name for our tasks.
+    
+    class Task
+      attr_accessor :name
+      
+      def initialize(name)
+        @name = name
+      end
+    end
+    
+### Adding Meat
 
+Now we have the barebone classes ready, next move on to add some meat. Lets see how to add a new task to the task list. All we have to do here is create a new task object and push it to the tasks array. We also pass the name of the task to be added, as a parameter.
+
+  def add(name)
+    task = Task.new(name)
+    @tasks.push(task)
+  end
+
+There are several notations to add an item to an array, 
 
 ## Free Resources
 
