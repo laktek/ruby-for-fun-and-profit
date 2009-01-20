@@ -170,7 +170,7 @@ Another spiffy option in Ruby syntax is the flexibility in placing the condition
 
 Rather than using a traditional `for` loop for iterating through the tasks array, we have used a method called `each` which can be applied to any enumerable object (such as arrays, hashes). `each` method will execute a given code block for each iteration. It also passes the current item in array to the code block. We have defined the code block to be executed inside keyword `do..end`(alternatively, a code block can be defined inside curly braces - {})
 
-### DIY challenge
+## DIY challenge
 
 I think we covered mouthful of Ruby for the day. So it's time to call it a day and go for a walk :) However we are not yet done with our app endeavour. We will be revisiting it in the next issue, with bunch of other cool stuff. So stay tuned!
 
