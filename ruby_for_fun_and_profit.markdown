@@ -4,25 +4,25 @@
 
 _I believe people want to express themselves when they program. They don't want to fight with the language. Programming languages must feel natural to programmers. - [Yukihiro Matsumoto (Matz)](http://www.linuxdevcenter.com/pub/a/linux/2001/11/29/ruby.html) _
 
-Unless you are a hardcore geek who can see the curves in a bit pattern, Programming sounds painful and boring for rest of us. However my attitude towards programming was changed after I stumbled upon this beautiful language. Her name is Ruby. She is simple, yet smart and sounded very human. Ruby has changed programming, from mere act of problem solving to powerful art of expression.
+Unless you are a hardcore geek who can see the curves in a bit pattern, Programming sounds painful and boring for rest of us. However my attitude towards programming changed after I stumbled upon this beautiful language. Her name was Ruby. She is simple, yet smart and sounded very human. Ruby has changed the concept of programming, from mere act of problem solving to powerful art of expression.
   
 Whether you are a seasoned hacker who wants a productive companion or a novice looking for some cool-aid, learning Ruby is a perfect choice.  In this series of articles, we will be riding through Ruby, exploring all her beauty, wit and power. 
 
 ## Made in Japan
 
-Most of us loves the stuff from Japan. The tag **Made in Japan** holds a unique value, especially for thier engineering marvels and design excellence.  If you feels the same, you may be excited to know that Ruby also bears with the same tag.  Smart Japanese programmer, [Yukihiro "Matz" Matsumoto](http://en.wikipedia.org/wiki/Yukihiro_Matsumoto) was the brainchild behind Ruby. He felt the need of a flexible scripting language which built with the power of Object Oriented programming. He went on to blend parts of his favourite languages (Perl, Smalltalk, Eiffel, Ada, and Lisp) to come up with an unique new language.   
+Most of us loves the stuff from Japan. The tag **Made in Japan** holds a unique value, especially for thier engineering marvels and design excellence.  It is a pleasure to reveal that Ruby also has its roots in Japan. A Smart Japanese programmer, [Yukihiro "Matz" Matsumoto](http://en.wikipedia.org/wiki/Yukihiro_Matsumoto) was the brainchild behind Ruby. He felt the need of a flexible scripting language which built with the power of Object Oriented programming. He went on to blend parts of his favourite languages (Perl, Smalltalk, Eiffel, Ada, and Lisp) to come up with an unique new language.   
 
 He started his work on February 24, 1993. Matz wrote Ruby with the philosophy of "Principle of least surprise". After 2 years Ruby was released to public as an Open Source project and slowly it started to gain traction from the global community.
 
-However, Ruby language really came to its limelight with **Ruby on Rails** (you must've heard this buzzword so many times in the web 2.0 circus). It is a web application framework written in Ruby by [David Heinemeier Hansson](http://en.wikipedia.org/wiki/David_Heinemeier_Hansson). With the ever increasing popularity of Rails, Ruby started to grow beyond leaps and bounds. Today there are more than 2 million [**Citation Needed**] active Ruby developers worldwide and this number is still on the rise. 
+However, Ruby language really came to its limelight with **Ruby on Rails** (you must've heard this buzzword so many times in the web 2.0 circus). It is a web application framework written in Ruby by [David Heinemeier Hansson](http://en.wikipedia.org/wiki/David_Heinemeier_Hansson). With the ever increasing popularity of Rails, Ruby started to grow beyond leaps and bounds. It is predicted that by 2013 there will be over [4 million active Ruby developers worldwide](http://www.rubyinside.com/ruby-popularity-marketshare-up-1255.html).
 
 ## What makes Ruby so special?
 
-Ruby is built on several key concepts which make it shine among the rest of programming languages. Basic understanding of these key concepts and metaphors will help you to get a better start. Don't worry if any of these sounds puzzling, we will covering each of them in depth later.
+Ruby is built on several key concepts which make it shine among the rest of programming languages. Basic understanding of these key concepts and metaphors will help you to get a better start. Don't worry if any of these sounds puzzling, we will be covering each of them in depth later.
 
 ### Everything is an Object
 
-In Ruby everything is treated as an object. That means you can have properties, methods and return values for each and every data type in Ruby (even Nil is an Object). Compare this with language like Java or C++, where they have primitive data types and every statement will not return an object. 
+In Ruby everything is treated as an object. That means you can have properties, methods for each and every data type in Ruby (even Nil is an Object). Compare this with language like Java or C++, where they have primitive data types and every statement will not return an object. 
 
 ### Duck Typing
 
@@ -34,11 +34,11 @@ Ruby embraces the principle of [_bottom-up design_](http://www.paulgraham.com/pr
 
 ### Rich Eco-System
 
-Ruby has very strong eco-system around it. There are great resources to help you to learn Ruby, including books, blogs, screencasts, IRC channels and etc. Though Rails is Ruby's poster child, there are lots of other interesting stuff you could do with Ruby. For example try [creating music](http://goruco2008.confreaks.com/02_bowkett.html) or [controlling electronics](http://rubyconf2007.confreaks.com/d1t2p1_ruby_and_electronics.html) with Ruby. You will find lot of awesome Ruby libraries and modules, in the form of [RubyGems](http://www.rubygems.org). You could easily plug and play these gems to your own applications.   
+Ruby has very strong eco-system around it. There are great resources to help you to learn Ruby, including books, blogs, screencasts, IRC channels and etc. Though Rails is Ruby's poster child, there are lots of other interesting stuff you could do with Ruby. For example, try [creating music](http://goruco2008.confreaks.com/02_bowkett.html) or [controlling electronics](http://rubyconf2007.confreaks.com/d1t2p1_ruby_and_electronics.html) with Ruby. You will find lot of awesome libraries and modules, in the form of [RubyGems](http://www.rubygems.org). You could easily plug and play these gems to your own applications.   
      
 ## Hello World (sucks!)
 
-Knowing the background of Ruby, now it's time to get into the water. First of all will cover some basic prerequisites.
+Knowing the background, I know now you are excited to get into the water. First of all will cover some basic prerequisites.
 
 ### Installing Ruby
 
@@ -63,13 +63,13 @@ In this series of tutorials we will be using the Ruby version 1.8.7, most of the
 
 Ruby comes with an interactive console, which we could use to get a quick taste of Ruby. You could start the console by typing `irb` on the command line or by running the program `fxri`(on Windows).
 
-I personally dislike to start off with Hello World, which sounds insane. However, for the sake of conventional language users (for those who knows how to say Hello World in 400 languages and very little beyond that ;)) will start of with it. So on your consoles just type this line:
+I personally dislike to start off with traditional Hello World examples, which sounds insane. However, for the sake of conventional language users (for those who knows how to say Hello World in 400 languages and very little beyond that ;)) will try that out. So on your consoles just type this line:
 
 <code>
   puts "Hello World"
 </code>
   
-You should see your obedient machine greeting you back with a nice "Hello World". Okay, that was actually a pretty much obvious, so let's move on to something bit more exciting. 
+You should see your obedient machine greeting you back with a nice "Hello World". Okay, that was pretty much obvious, so let's move on to something bit more exciting. 
 
 Drop this line on the console and Ruby will greet you with three hearty cheers! Hip Hip Hooray!
 
@@ -81,13 +81,15 @@ What exactly we did here? we called the method `times` on integer 3 and along wi
 
 ## Lets do some REAL stuff
 
-I feel there is no point of learning a programming language if we cannot use it to scratch our itch. So without without wasting any superficial examples, we are going to build something that we could use everyday. A simple To Do List manager. Open up your favourite text editor (remember you don't need a bulky <abbr title="Integrated Development Environment">IDE</abbr> to write Ruby) and pull up your socks, we are going to start hacking!
+I feel there is no point of learning a programming language if we cannot use it to scratch our itch. So without without wasting any superficial examples, we are going to build something that we could use everyday and something you could proudly show to your friends. A simple To Do List manager. Open up your favourite text editor (remember you don't need a bulky <abbr title="Integrated Development Environment">IDE</abbr> to write Ruby) and pull up your socks, we are going to start hacking!
 
 We will be building our ToDo manager in the agile way. Starting from the very basic features and enhancing them in each iteration.
 
-The most preliminary version will have the following functionality.
+What are the two features you really need to have for your TodoList app? You will need to:
 1. Add a task.
-2. Listing the available tasks
+2. See the available tasks
+
+Lets start off with them.
 
 ### Building Blocks
 
@@ -95,7 +97,7 @@ First, we will need to identify the classes we should build. In Object Oriented 
  
 We will have a main `TodoList` class which will implement all the methods related to the todo list and also a `Task` class which will be used to hold the individual task objects.
 
-Here is how we define a class in Ruby. 
+Here is our `TodoList` class. 
 
 <code>
   class TodoList
@@ -105,7 +107,7 @@ Here is how we define a class in Ruby.
 
 In Ruby, it is customary to define the class name in camel case. We start the each word with a capital letter and leave no spaces between the words. We are closing the class with the keyword `end`. One more thing, in Ruby you could leave a comment with a `#`(hash) symbol.
 
-Now we are going to add a method to the class. A method is defined with `def` keyword. You can accept arguments to the method, these arguments goes along with the method name enclosed with parenthesis.  
+Now we are going to add a method to the class. A method is defined with `def` keyword. You can accept arguments in a method, these arguments goes along with the method name enclosed in parenthesis.  
 
     def initialize(name)
       @list_name = name  
@@ -118,7 +120,7 @@ The method we defined above, `initialize` holds a special meaning. As the name i
   my_tasks = TodoList.new("My Tasks")
 </code>
 
-Each `TodoList` instance will have a name and an array to hold the tasks. Every time we create a new `TodoList` object, we will assign it a name and reserve an empty array for tasks. We call such variables as instance variable as they are specific to a particular instance. In Ruby, instance variable names are notated with a `@` symbol. Since instance variables are scoped within object life cycle, they will not be accessible to outside methods. 
+Each `TodoList` instance will have a name and an array to hold the tasks. Every time we create a new `TodoList` object, we will need to assign it a name and reserve an empty array for tasks. Generally, we call them as instance variables as they are specific to a particular instance. In Ruby, as a convention we write an instance variable name starting with an `@` symbol. Important thing to remember about instance variables is that they are scoped within a object's life cycle and they will not be accessible to outside methods. 
 
 So how do we make these instance variables accessible to outside methods? Common design pattern is to use two methods to read and write the instance variable. These methods are known as **attribute accessors**. However it would be pretty annoying to write such methods for each and every instance variable we want to expose. Ruby makes our life easy by introducing handy shortcuts to implement attribute accessors. There are 3 such shortcuts, `attr_reader`, `attr_writer` and `attr_accessor`. `attr_reader` will generate the read method for the instance variable, similarly `attr_writer` will generate the write method and `attr_accessor` will generate both read and write methods. Lets add attribute accessors in our `TodoList` class.
 
@@ -164,7 +166,7 @@ Since we can add tasks to our task list, next there should be a way to display t
         end
       end
 
-In this method we have used several ruby idioms. Remember we said a method in Ruby will always return a value? But if you did notice we didn't explicitly specified a return value for any of our previous methods. That's because Ruby automatically return the value of the last line executed as the return value. However if you look carefully in the above method we have defined a return value. That is a conditional statement which will be executed if only the tasks are blank. So if the method come across an empty tasks array it will gracefully return from the method. 
+In this method we have used several ruby idioms. As Ruby is a fully Object Oriented language it will return an object on each method call. But if you did notice we didn't explicitly specified a return value for any of our previous methods. By default Ruby will return the value of the last statement it executed. However in the above method we had to define a return value. That is a conditional statement which will be executed if only the tasks are blank. So if the method come across an empty tasks array it will gracefully return from the method. 
 
 Another spiffy option in Ruby syntax is the flexibility in placing the conditions(`if` clause). In most of the programming languages we define the conditional clause first and then the predicate. But in Ruby if you prefer you could define the conditional clause after the predicate. This could make the code really readable in some cases, as plain English. Read the line 3 of above `list` method. Can you understand what it means? It can be read as "Say(return) 'This Task List is empty' if task list is empty".
 
