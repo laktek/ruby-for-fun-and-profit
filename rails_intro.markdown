@@ -173,7 +173,9 @@ In any case, Rails will create a folder in your working directory called blog. O
 <td>vendor/</td>
 <td>A place for third-party code. In a typical Rails application, this includes Ruby Gems, the Rails source code (if you install it into your project) and plugins containing additional prepackaged functionality.</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+
 
 ### Configuring a Database
 
