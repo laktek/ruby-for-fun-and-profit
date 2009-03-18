@@ -262,6 +262,7 @@ Here are some free Rails' resources for you.
 * Rails Screencasts & Presentations - <http://rubyonrails.org/screencasts>
 * Rails Guides - <http://guides.rubyonrails.org/>
 * Rails Complete API - <http://api.rubyonrails.org/>
+* Rails Magazine - <http://railsmagazine.com/>
 
 ### Creative Commons License
 
